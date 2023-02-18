@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="quize.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="start-btn">
+            <button onclick="start()">Start Quiz</button>
+        </div>
+        <div class="info-box">
+            <div class="info-title">
+                <span>Some Rules of this quiz</span>
+            </div>
+            <div class="info-list">
+                <div class="info">1. You Will have only <span>15 seconds</span>per each question.</div>
+                <div class="info">2. Once you select your answer, you can not reselect</div>
+                <div class="info">3. you can not select any option once time goes off.</div>
+                <div class="info">4. you can not exit from the quiz while you're playing.</div>
+                <div class="info">5. you'll get points on the your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit" onclick="exit()">Exit quiz</button>
+                <button class="restart" onclick="resume()">Continue </button>
+            </div>
+
+        </div>
+        <div class="quiz-box">
+            <header>
+                <div class="title"> Top placements Question</div>
+                <div class="timer">
+                    <div class="time-text">Time left</div>
+                    <div class="timer-sec">15</div>
+
+
+                </div>
+                <div class="time-line"></div>
+            </header>
+            <section>
+                <div class="que-text">
+                    <!-- <span>
+                        What does HTML stands for?
+                    </span> -->
+                </div>
+                <div class="option-list">
+                    <!-- <div class="option">
+                        <span>hyper text preprocessor</span>
+                        <div class="icon tick">&#10006;</div>
+                    </div>
+                    <div class="option">
+                        <span>hyper text mock text</span>
+                        <div class="icon cross">&#10006;</i></div>
+                    </div>
+                    <div class="option">
+                        <span>hyper text transfer protocol</span>
+                        <div class="icon cross">&#10006;</div>
+                    </div>
+                    <div class="option">
+                        <span>hyper text markup language</span>
+                        <div class="icon cross">&#10004;</i></div>
+                    </div> -->
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <div class="total-que">
+                    <!-- <span>
+                        <p>2</p>of <p>5</p>question
+                    </span> -->
+                </div>
+                <button class="next-btn">Next que</button>
+            </footer>
+        </div>
+        <div class="result-box">
+            <div class="icon">
+                &#10068;
+            </div>
+            <div class="complete-text">You've Completed the quiz!</div>
+            <div class="score-text">
+                <!-- <span> you got only <strong> 2</strong> out of<strong> 5</strong></span> -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit" id="quit" onclick="quit_quiz()">Quit Quiz</button>
+            </div>
+        </div>
+        <div class="thanku">
+            <h1>thanku</h1>
+        </div>
+    </div>
+   
+    <script src="quiz.js"></script>
+    <script src="question.js"></script>
+</body>
+
+</html>
